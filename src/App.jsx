@@ -11,74 +11,69 @@ function App() {
   const [selectedGenre, setSelectedGenre] = useState("Tous");
 
   // 🎬 Films de démonstration
-  const filmsInitiaux = [
-    {
-      id: 1,
-      titre: "Inception",
-      genre: "Science-Fiction",
-      annee: 2010,
-      note: 8.8,
-      description:
-        "Un voleur qui vole les secrets corporatifs grâce à une technologie de partage des rêves.",
-      poster: "🎬",
-      favoris: false,
-    },
-    {
-      id: 2,
-      titre: "Interstellar",
-      genre: "Science-Fiction",
-      annee: 2014,
-      note: 8.6,
-      description:
-        "Une équipe d'explorateurs voyage à travers un trou de ver dans l'espace.",
-      poster: "🚀",
-      favoris: false,
-    },
-    {
-      id: 3,
-      titre: "Forrest Gump",
-      genre: "Drame",
-      annee: 1994,
-      note: 8.8,
-      description:
-        "L'histoire d'un homme ayant un faible QI mais un cœur d'or.",
-      poster: "🏃",
-      favoris: false,
-    },
-    {
-      id: 4,
-      titre: "The Dark Knight",
-      genre: "Action",
-      annee: 2008,
-      note: 9.0,
-      description:
-        "Batman affronte le Joker, un criminel chaotique et dangereux.",
-      poster: "🦇",
-      favoris: false,
-    },
-    {
-      id: 5,
-      titre: "Pulp Fiction",
-      genre: "Thriller",
-      annee: 1994,
-      note: 8.9,
-      description:
-        "Plusieurs histoires entrecroisées de criminels à Los Angeles.",
-      poster: "🔫",
-      favoris: false,
-    },
-    {
-      id: 6,
-      titre: "La La Land",
-      genre: "Comédie Musicale",
-      annee: 2016,
-      note: 8.0,
-      description:
-        "Une histoire d'amour entre un musicien de jazz et une actrice à Los Angeles.",
-      poster: "🎵",
-      favoris: false,
-    },
-  ];
+  // Dans votre App.js, ajoutez ces films avec des descriptions améliorées
+const filmsInitiaux = [
+  {
+    id: 1,
+    titre: "Inception",
+    genre: "Science-Fiction",
+    annee: 2010,
+    note: 8.8,
+    description: "Dom Cobb est un voleur expérimenté dans l'art périlleux de l'extraction : le vol de secrets dans les rêves.",
+    poster: "🎭",
+    favoris: false,
+  },
+  {
+    id: 2,
+    titre: "Interstellar",
+    genre: "Science-Fiction",
+    annee: 2014,
+    note: 8.6,
+    description: "Pour sauver l'humanité, un groupe d'explorateurs utilise un vaisseau interstellaire pour franchir un trou de ver.",
+    poster: "🚀",
+    favoris: false,
+  },
+  {
+    id: 3,
+    titre: "The Dark Knight",
+    genre: "Action",
+    annee: 2008,
+    note: 9.0,
+    description: "Batman accepte de relever son plus grand défi : affronter le Joker, un criminel d'une cruauté inédite.",
+    poster: "🦇",
+    favoris: false,
+  },
+  {
+    id: 4,
+    titre: "Pulp Fiction",
+    genre: "Thriller",
+    annee: 1994,
+    note: 8.9,
+    description: "Les vies de deux tueurs à gages, d'un boxeur et d'un gangster s'entremêlent dans une histoire de crime.",
+    poster: "🔫",
+    favoris: false,
+  },
+  {
+    id: 5,
+    titre: "La La Land",
+    genre: "Musical",
+    annee: 2016,
+    note: 8.0,
+    description: "Un musicien de jazz et une actrice en herbe tombent amoureux à Los Angeles tout en poursuivant leurs rêves.",
+    poster: "🎵",
+    favoris: false,
+  },
+  {
+    id: 6,
+    titre: "Parasite",
+    genre: "Thriller",
+    annee: 2019,
+    note: 8.6,
+    description: "Une famille pauvre s'infiltre dans le quotidien d'une riche famille en se faisant passer pour des employés.",
+    poster: "🏆",
+    favoris: false,
+  },
+];
 
   // 🔁 Chargement initial
   useEffect(() => {
