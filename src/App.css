@@ -306,3 +306,48 @@ body {
     top: -50px;
   }
 }
+/* Ajoutez à la fin de votre App.css */
+
+/* ==================== FOOTER ==================== */
+.footer {
+  background: rgba(0, 0, 0, 0.9);
+  border-top: 1px solid rgba(229, 9, 20, 0.3);
+  padding: 30px 60px;
+  margin-top: 80px;
+  backdrop-filter: blur(10px);
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.footer-stats {
+  color: rgba(229, 9, 20, 0.8) !important;
+  font-weight: 600;
+  font-size: 0.9rem !important;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer {
+    padding: 25px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 20px;
+  }
+  
+  .footer p {
+    font-size: 0.85rem;
+  }
+}
